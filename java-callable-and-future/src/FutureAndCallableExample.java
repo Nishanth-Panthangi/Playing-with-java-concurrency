@@ -20,6 +20,9 @@ public class FutureAndCallableExample {
 
         System.out.println("Retrieve the result of the future");
         // Future.get() blocks until the result is available
-        
+	String result = future.get();
+        System.out.println(result);
+
+        executorService.shutdown();
     }
 }
